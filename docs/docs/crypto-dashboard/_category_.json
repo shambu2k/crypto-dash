@@ -1,0 +1,8 @@
+{
+  "label": "Cryptocurrency Dashboard",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "A comprehensive guide to our Next.js cryptocurrency dashboard, from architecture decisions to implementation details."
+  }
+}
