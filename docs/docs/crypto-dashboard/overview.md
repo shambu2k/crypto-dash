@@ -42,7 +42,7 @@ This cryptocurrency dashboard is a modern application that provides real-time pr
 
 ## API Integration
 
-The dashboard integrates with CoinCap API to fetch real-time cryptocurrency data:
+The dashboard integrates with [CoinCap API](https://docs.coincap.io/) to fetch real-time cryptocurrency data:
 
 ### Endpoints Used
 - Assets API (`/v2/assets`): Fetches current price data for cryptocurrencies
