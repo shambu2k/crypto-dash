@@ -83,11 +83,11 @@ export default function Home() {
       <div className={`min-h-screen font-mono ${isDarkMode ? 'bg-black text-white' : 'bg-white text-black'} p-4 sm:p-8`}>
         <div className="container mx-auto">
           <header className="mb-8 border-b-4 border-current pb-8">
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex justify-between items-center mb-4 flex-col sm:flex-row gap-4 sm:gap-0">
               <h1 className="text-4xl uppercase">Crypto Dashboard</h1>
-              <div className="flex gap-4">
+              <div className="flex gap-2 sm:gap-4 w-full sm:w-auto">
                 <select
-                  className={`border-4 ${isDarkMode ? 'border-white bg-black text-white' : 'border-black bg-white text-black'} px-4 py-2 uppercase`}
+                  className={`border-4 ${isDarkMode ? 'border-white bg-black text-white' : 'border-black bg-white text-black'} px-2 sm:px-4 py-2 uppercase text-sm sm:text-base w-full sm:w-auto`}
                   value={selectedCurrency}
                   onChange={(e) => setSelectedCurrency(e.target.value)}
                 >
@@ -98,7 +98,7 @@ export default function Home() {
                   ))}
                 </select>
                 <button
-                  className={`border-4 ${isDarkMode ? 'border-white bg-black text-white' : 'border-black bg-white text-black'} px-4 py-2`}
+                  className={`border-4 ${isDarkMode ? 'border-white bg-black text-white' : 'border-black bg-white text-black'} px-2 sm:px-4 py-2 uppercase text-sm sm:text-base w-full sm:w-auto min-w-[80px]`}
                   onClick={() => setIsDarkMode(!isDarkMode)}
                 >
                   {isDarkMode ? 'LIGHT' : 'DARK'}
